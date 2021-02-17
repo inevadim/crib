@@ -1,11 +1,12 @@
 import './App.css';
-import { Navigation } from './components/navigation/navigation';
+import SwipeableTemporaryDrawer from './components/navigation/navigation';
 
 function App() {
   return (
     <div className="App">
       Hello World
-      <Navigation/>
+      {/* <Navigation/> */}
+      <SwipeableTemporaryDrawer/>
     </div>
   );
 }
