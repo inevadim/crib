@@ -1,13 +1,16 @@
+import { BrowserRouter } from 'react-router-dom';
 import './App.css';
-import SwipeableTemporaryDrawer from './components/navigation/navigation';
+import CustomizedMenus, {Navigation} from './components/navigation/navigation';
 
 function App() {
   return (
-    <div className="App">
-      Hello World
-      {/* <Navigation/> */}
-      <SwipeableTemporaryDrawer/>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Navigation/>
+        {/* <CustomizedMenus/> */}
+      
+      </div>
+    </BrowserRouter>
   );
 }
 
